@@ -2,7 +2,7 @@ $(function(){
 
   // Initalize the ToC if we're on an article page
   if ($('.js-toc').length) {
-  //  tableOfContents($('.js-toc'));
+    tableOfContents($('.js-toc'));
 
     var toc = $('.js-toc');
     var tocOffset = toc.offset().top;
