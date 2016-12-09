@@ -20,7 +20,7 @@ $(function(){
     }
     calculateTocSections();
     $(window).bind('load', calculateTocSections);
-
+    toc.bind('click',scrollTo)
     var highlightTocSection = function(){
       var highlightIndex = 0;
       $.each(tocSectionOffsets, function(index, offset){
@@ -80,7 +80,7 @@ var tableOfContents = function($listContainer) {
 
     var listItem = $('<li>').append(listLink);
 
-    $listContainer.append(listItem);
+    //$listContainer.append(listItem);
   })
 }
 
